@@ -1,0 +1,88 @@
+name: core_dls
+description: A new Flutter package project.
+version: 0.3.10
+environment:
+  sdk: ">=3.0.1 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  # https://pub.dev/packages/animations
+  animations: ^2.0.11
+
+  # https://pub.dev/packages/collection
+  collection: ^1.17.2
+
+  # https://pub.dev/packages/cached_network_image
+  cached_network_image: ^3.3.1
+
+  # https://pub.dev/packages/dropdown_button2
+  dropdown_button2: ^2.3.9
+
+  # https://pub.dev/packages/equatable
+  equatable: ^2.0.5
+
+  # https://pub.dev/packages/flutter_easyloading
+  flutter_easyloading: ^3.0.5
+
+  # https://pub.dev/packages/flutter_hooks
+  flutter_hooks: ^0.20.4
+
+  # https://pub.dev/packages/flutter_screenutil
+  flutter_screenutil: ^5.9.0
+
+  # https://pub.dev/packages/flutter_svg
+  flutter_svg: ^2.0.9
+
+  # https://pub.dev/packages/fluttertoast
+  fluttertoast: ^8.2.4
+
+  # https://pub.dev/packages/intl
+  intl: ^0.20.2
+
+  # https://pub.dev/packages/reactive_forms
+  reactive_forms: ^16.1.1
+
+  # https://pub.dev/packages/reactive_phone_form_field
+  reactive_phone_form_field: ^2.0.1
+
+  # https://pub.dev/packages/simple_animations
+  simple_animations: ^5.0.2
+
+  # https://pub.dev/packages/styled_text
+  styled_text: ^8.1.0
+
+  flutter_localizations:
+    sdk: flutter
+
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  # https://pub.dev/packages/flutter_lints
+  flutter_lints: ^3.0.1
+
+  flutter_test:
+    sdk: flutter
+
+  # https://pub.dev/packages/very_good_analysis
+  very_good_analysis: ^5.1.0
+
+  # https://pub.dev/packages/flutter_gen
+  flutter_gen_runner: ^5.4.0
+
+flutter_gen:
+  output: lib/src/constants/
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+
+  assets:
+    outputs:
+      class_name: DLSAssets
+
+flutter:
+
+  assets:
+    - assets/icons/
+

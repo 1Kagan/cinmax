@@ -1,0 +1,127 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter gen-l10n
+
+## exception
+
+ProcessException: ProcessException: `dart format` failed with exit code 65
+
+stdout:
+Formatted no files in 0.20 seconds.
+
+
+stderr:
+Could not format because the source could not be parsed:
+
+line 281, column 14 of lib/l10n/generated/app_localizations_en.dart: 'continue' can't be used as an identifier because it's a keyword.
+    ╷
+281 │   String get continue => 'Continue';
+    │              ^^^^^^^^
+    ╵
+Could not format because the source could not be parsed:
+
+line 281, column 14 of lib/l10n/generated/app_localizations_tr.dart: 'continue' can't be used as an identifier because it's a keyword.
+    ╷
+281 │   String get continue => 'Devam Et';
+    │              ^^^^^^^^
+    ╵
+Could not format because the source could not be parsed:
+
+line 636, column 14 of lib/l10n/generated/app_localizations.dart: 'continue' can't be used as an identifier because it's a keyword.
+    ╷
+636 │   String get continue;
+    │              ^^^^^^^^
+    ╵
+
+  Command: /Users/kagankilic/fvm/versions/3.27.1/bin/cache/dart-sdk/bin/dart /Users/kagankilic/fvm/versions/3.27.1/bin/cache/dart-sdk/bin/dart format /Users/kagankilic/devplace/cinmax/lib/l10n/generated/app_localizations_en.dart /Users/kagankilic/devplace/cinmax/lib/l10n/generated/app_localizations_tr.dart /Users/kagankilic/devplace/cinmax/lib/l10n/generated/app_localizations.dart
+
+```
+#0      generateLocalizations (package:flutter_tools/src/localizations/gen_l10n.dart:97:7)
+<asynchronous suspension>
+#1      GenerateLocalizationsCommand.runCommand (package:flutter_tools/src/commands/generate_localizations.dart:277:5)
+<asynchronous suspension>
+#2      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1563:27)
+<asynchronous suspension>
+#3      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#4      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#5      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:494:9)
+<asynchronous suspension>
+#6      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#7      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:431:5)
+<asynchronous suspension>
+#8      run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:98:11)
+<asynchronous suspension>
+#9      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#10     main (package:flutter_tools/executable.dart:102:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.32.6, on macOS 26.0 25A5295e darwin-arm64, locale tr-TR) [852ms]
+    [32m•[39m Flutter version 3.32.6 on channel stable at /Users/kagankilic/fvm/versions/3.27.1
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 077b4a4ce1 (3 days ago), 2025-07-08 13:31:08 -0700
+    [32m•[39m Engine revision 72f2b18bb0
+    [32m•[39m Dart version 3.8.1
+    [32m•[39m DevTools version 2.45.1
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 35.0.0) [2,7s]
+    [32m•[39m Android SDK at /Users/kagankilic/Library/Android/sdk
+    [32m•[39m Platform android-35, build-tools 35.0.0
+    [32m•[39m Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.7+0-17.0.7b1000.6-10550314)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Xcode - develop for iOS and macOS (Xcode 16.4) [2,6s]
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Build 16F6
+    [32m•[39m CocoaPods version 1.16.2
+
+[32m[✓][39m Chrome - develop for the web [95ms]
+    [32m•[39m Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[32m[✓][39m Android Studio (version 2023.1) [95ms]
+    [32m•[39m Android Studio at /Applications/Android Studio.app/Contents
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.7+0-17.0.7b1000.6-10550314)
+
+[32m[✓][39m IntelliJ IDEA Ultimate Edition (version 2024.3.3) [94ms]
+    [32m•[39m IntelliJ at /Applications/IntelliJ IDEA.app
+    [32m•[39m Flutter plugin version 83.0.4
+    [32m•[39m Dart plugin version 243.23654.44
+
+[32m[✓][39m VS Code (version 1.101.1) [8ms]
+    [32m•[39m VS Code at /Applications/Visual Studio Code.app/Contents
+    [32m•[39m Flutter extension version 3.106.0
+
+[32m[✓][39m Connected device (4 available) [7,4s]
+    [32m•[39m iPhone (mobile)        • 00008140-000C706A14E2801C            • ios            • iOS 18.5 22F76
+    [32m•[39m iPhone 16 Pro (mobile) • B808D5C3-44B7-499A-8168-F0872D110383 • ios            •
+      com.apple.CoreSimulator.SimRuntime.iOS-18-0 (simulator)
+    [32m•[39m macOS (desktop)        • macos                                • darwin-arm64   • macOS 26.0 25A5295e
+      darwin-arm64
+    [32m•[39m Chrome (web)           • chrome                               • web-javascript • Google Chrome
+      138.0.7204.101
+    [33m![39m Error: Browsing on the local area network for iPhone. Ensure the device is unlocked and attached with
+      a cable or associated with the same local area network as this Mac.
+      The device must be opted into Developer Mode to connect wirelessly. (code -27)
+
+[32m[✓][39m Network resources [900ms]
+    [32m•[39m All expected network resources are available.
+
+[32m•[39m No issues found!
+```

@@ -1,0 +1,30 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+*.g.dart
+*.freezed.dart
+
+# IDEs
+.idea/
+*.iml
+
+# Environment files
+.env*
+
+# Android
+android/local.properties
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/Pods/
+ios/Podfile.lock
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/engine.xcframework
+ios/Runner.xcworkspace/
+
+# macOS
+.DS_Store 

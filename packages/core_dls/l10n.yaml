@@ -1,0 +1,5 @@
+arb-dir: lib/src/l10n
+template-arb-file: dls_en.arb
+output-localization-file: dls_localizations.dart
+untranslated-messages-file: untranslated_localizations.txt
+synthetic-package: false
